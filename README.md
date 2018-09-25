@@ -1,0 +1,1 @@
+# bazemage-theme-core
