@@ -1,0 +1,24 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+        <referenceBlock name="category.product.addto.compare" remove="true"/>
+        <referenceBlock name="view.addto.compare" remove="true"/>
+        <referenceBlock name="product.info.sku" remove="true"/>
+        <referenceBlock name="checkout.cart.shipping" remove="true"/>
+        <referenceBlock name="checkout.cart.summary.title" remove="true"/>
+        <referenceBlock name="checkout.cart.summary.totals" remove="true"/>
+        <referenceBlock name="sales-guest-form-link" remove="true"/>
+        <!-- @see Baze_LockAddresses -->
+        <referenceBlock name="customer-account-navigation-address-link" remove="true"/>
+        <referenceBlock name="customer_account_navigation">
+            <block class="Magento\Customer\Block\Account\SortLinkInterface" name="customer-account-navigation-address-link-conditional" after="customer-account-navigation-delimiter-1" ifconfig="customer/address/address_book_access">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Address Book</argument>
+                    <argument name="path" xsi:type="string">customer/address</argument>
+                    <argument name="sortOrder" xsi:type="number">191</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+        <referenceBlock name="customer_account_dashboard_address" remove="true"/>
+    </body>
+</page>
