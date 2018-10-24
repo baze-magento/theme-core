@@ -1,4 +1,4 @@
-# bazemage-theme-core
+# *Core* Theme
 Provides the core theme functionality to support bazedk's addon modules, when necessary. 
 
 # Architecture
