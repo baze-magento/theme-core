@@ -1,11 +1,10 @@
 {
-    "name": "bazedk/bazemage-theme-core",
+    "name": "baze/theme-core",
     "description": "Base theme structural components, bugfixes, and functionality assists.",
     "require": {
         "php": "~5.6.0|~7.0.0|~7.1.0"
     },
     "type": "magento2-theme",
-    "version": "1.0.1",
     "autoload": {
         "files": [
             "registration.php"
